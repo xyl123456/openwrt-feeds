@@ -1,0 +1,19 @@
+Source-Makefile: feeds/luci/libs/luci-lib-px5g/Makefile
+Package: luci-lib-px5g
+Submenu: 6. Libraries
+Version: x-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +liblua
+Menu-Depends: 
+Provides: 
+Build-Depends: lua/host luci-base/host 
+Section: luci
+Category: LuCI
+Title: RSA/X.509 Key Generator (required for LuCId SSL support)
+Maintainer: 
+Source: 
+Type: ipkg
+Description: RSA/X.509 Key Generator (required for LuCId SSL support)
+
+@@
+
+

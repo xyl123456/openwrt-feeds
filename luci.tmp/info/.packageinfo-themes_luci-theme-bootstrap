@@ -1,0 +1,19 @@
+Source-Makefile: feeds/luci/themes/luci-theme-bootstrap/Makefile
+Package: luci-theme-bootstrap
+Submenu: 4. Themes
+Version: x-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Build-Depends: lua/host luci-base/host 
+Section: luci
+Category: LuCI
+Title: Bootstrap Theme (default)
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Bootstrap Theme (default)
+
+@@
+
+

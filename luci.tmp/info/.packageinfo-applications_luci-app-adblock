@@ -1,0 +1,19 @@
+Source-Makefile: feeds/luci/applications/luci-app-adblock/Makefile
+Package: luci-app-adblock
+Submenu: 3. Applications
+Version: x-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +adblock
+Menu-Depends: 
+Provides: 
+Build-Depends: lua/host luci-base/host 
+Section: luci
+Category: LuCI
+Title: LuCI support for Adblock
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Adblock
+
+@@
+
+

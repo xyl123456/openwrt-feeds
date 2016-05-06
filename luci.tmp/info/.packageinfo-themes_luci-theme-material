@@ -1,0 +1,19 @@
+Source-Makefile: feeds/luci/themes/luci-theme-material/Makefile
+Package: luci-theme-material
+Submenu: 4. Themes
+Version: x-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Build-Depends: lua/host luci-base/host 
+Section: luci
+Category: LuCI
+Title: Material Theme
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Material Theme
+
+@@
+
+

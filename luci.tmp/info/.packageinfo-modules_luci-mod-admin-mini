@@ -1,0 +1,19 @@
+Source-Makefile: feeds/luci/modules/luci-mod-admin-mini/Makefile
+Package: luci-mod-admin-mini
+Submenu: 2. Modules
+Version: x-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +luci-base @BROKEN
+Menu-Depends: 
+Provides: 
+Build-Depends: lua/host luci-base/host 
+Section: luci
+Category: LuCI
+Title: LuCI Essentials - stripped down and user-friendly
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI Essentials - stripped down and user-friendly
+
+@@
+
+

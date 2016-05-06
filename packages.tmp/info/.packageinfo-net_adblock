@@ -1,0 +1,20 @@
+Source-Makefile: feeds/packages/net/adblock/Makefile
+Package: adblock
+Version: 1.0.0-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +wget
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Powerful adblock script to block ad/abuse domains
+Maintainer: Dirk Brenken <openwrt@brenken.org>
+Source: 
+Type: ipkg
+Description: Powerful adblock script to block ad/abuse domains.
+Currently the script supports 16 domain blacklist sites plus manual black- and whitelist overrides.
+Please see https://github.com/openwrt/packages/blob/master/net/adblock/files/README.md for further information.
+
+Dirk Brenken <openwrt@brenken.org>
+@@
+
+

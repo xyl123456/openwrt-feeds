@@ -1,0 +1,19 @@
+Source-Makefile: feeds/telephony/net/asterisk-1.8.x-codec-g729/Makefile
+Package: asterisk18-codec-g729
+Submenu: Telephony
+Version: 1.3-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread asterisk18 +bcg729
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: G.729 codec for Asterisk open source PBX
+Maintainer: Alex Samorukov <samm@os2.kiev.ua>
+Source: asterisk-g72x-1.3.tar.bz2
+Type: ipkg
+Description: G.729 codec for Asterisk open source PBX
+http://asterisk.hosting.lv
+Alex Samorukov <samm@os2.kiev.ua>
+@@
+
+

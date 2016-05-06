@@ -1,0 +1,170 @@
+Source-Makefile: feeds/packages/net/knot/Makefile
+Package: knot-libdnssec
+Version: 2.1.1-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +libpthread +libgnutls +jansson
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Knot DNS DNSSEC library
+Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
+Source: knot-2.1.1.tar.xz
+Type: ipkg
+Description: 	Knot DNS zone parser library.
+https://www.knot-dns.cz
+Daniel Salzman <daniel.salzman@nic.cz>
+@@
+
+Package: knot-libknot
+Version: 2.1.1-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +libpthread +knot-libdnssec
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Knot DNS library
+Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
+Source: knot-2.1.1.tar.xz
+Type: ipkg
+Description: 	Knot DNS library.
+https://www.knot-dns.cz
+Daniel Salzman <daniel.salzman@nic.cz>
+@@
+
+Package: knot-libzscanner
+Version: 2.1.1-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +libpthread
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Knot DNS zone parser library
+Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
+Source: knot-2.1.1.tar.xz
+Type: ipkg
+Description: Knot DNS zone parser library
+https://www.knot-dns.cz
+Daniel Salzman <daniel.salzman@nic.cz>
+@@
+
+Package: knot
+Submenu: IP Addresses and Names
+Version: 2.1.1-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +liburcu +knot-libdnssec +knot-libknot +knot-libzscanner
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Knot DNS server
+Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
+Source: knot-2.1.1.tar.xz
+Type: ipkg
+Description: 	High-performance authoritative-only DNS server.
+https://www.knot-dns.cz
+Daniel Salzman <daniel.salzman@nic.cz>
+@@
+
+Package: knot-dig
+Submenu: IP Addresses and Names
+Version: 2.1.1-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +knot-libdnssec +knot-libknot
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Knot DNS advanced DNS lookup utility
+Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
+Source: knot-2.1.1.tar.xz
+Type: ipkg
+Description: 	Knot DNS advanced DNS lookup utility.
+https://www.knot-dns.cz
+Daniel Salzman <daniel.salzman@nic.cz>
+@@
+
+Package: knot-host
+Submenu: IP Addresses and Names
+Version: 2.1.1-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +knot-libdnssec +knot-libknot
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Knot DNS simple DNS lookup utility
+Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
+Source: knot-2.1.1.tar.xz
+Type: ipkg
+Description: 	Knot DNS simple DNS lookup utility.
+https://www.knot-dns.cz
+Daniel Salzman <daniel.salzman@nic.cz>
+@@
+
+Package: knot-nsupdate
+Submenu: IP Addresses and Names
+Version: 2.1.1-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +knot-libdnssec +knot-libknot +knot-libzscanner
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Knot DNS dynamic DNS update utility
+Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
+Source: knot-2.1.1.tar.xz
+Type: ipkg
+Description: 	Knot DNS dynamic DNS update utility.
+https://www.knot-dns.cz
+Daniel Salzman <daniel.salzman@nic.cz>
+@@
+
+Package: knot-nsec3hash
+Submenu: IP Addresses and Names
+Version: 2.1.1-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +knot-libdnssec
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Knot DNS simple NSEC3 hash utility
+Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
+Source: knot-2.1.1.tar.xz
+Type: ipkg
+Description: 	Knot DNS simple NSEC3 hash utility.
+https://www.knot-dns.cz
+Daniel Salzman <daniel.salzman@nic.cz>
+@@
+
+Package: knot-keymgr
+Submenu: IP Addresses and Names
+Version: 2.1.1-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +knot-libdnssec +knot-libzscanner
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Knot DNS DNSSEC key management utility
+Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
+Source: knot-2.1.1.tar.xz
+Type: ipkg
+Description: 	Knot DNS DNSSEC key management utility.
+https://www.knot-dns.cz
+Daniel Salzman <daniel.salzman@nic.cz>
+@@
+
+Package: knot-tests
+Submenu: IP Addresses and Names
+Version: 2.1.1-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +liburcu +knot-libdnssec +knot-libknot +knot-libzscanner
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Knot DNS tests
+Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
+Source: knot-2.1.1.tar.xz
+Type: ipkg
+Description: 	Unit tests for the Knot DNS server and libraries.
+	Usage: /usr/share/knot/runtests.sh
+https://www.knot-dns.cz
+Daniel Salzman <daniel.salzman@nic.cz>
+@@
+
+
